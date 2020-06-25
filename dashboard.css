@@ -1,0 +1,152 @@
+body {
+  font-size: .875rem;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+.featurette-divider {
+  margin: 2rem 0;
+}
+.serviceid1
+{
+  background-color:blue;
+
+}
+.clear{
+  clear:both;
+}
+
+.caption1 {
+  position: absolute;
+  bottom: 100%;
+  color: white;
+  font-size: 100px;
+  background:rgba(40, 40, 40, 0.75);
+  overflow: hidden;
+  width: 100%;
+  padding:0px 10px;
+  height:0;
+  transition: .5s ease;
+}
+
+
+.service1:hover .caption1 {
+  bottom:0;
+  height: 100%;
+}
+.learnMoreBtnWhite
+	{
+		background: #01ADED url('https://png.pngtree.com/svg/20170406/forward_next_1179301.png') no-repeat scroll center center;
+		border: medium none;
+		border-radius: 50px;
+		color: #313131 !important;
+		display: block;
+		font-size: 0;
+		font-weight: normal;
+		width: 20px;
+		height: 20px;
+		text-indent: 4px !important;
+		text-transform: uppercase;
+		transition: all 0.5s ease 0s;
+		background-size: 14px;
+		padding: 20px 20px;
+	}
+
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/*
+ * Content
+ */
+
+[role="main"] {
+  padding-top: 133px; /* Space for fixed navbar */
+}
+
+@media (min-width: 768px) {
+  [role="main"] {
+    padding-top: 48px; /* Space for fixed navbar */
+  }
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
